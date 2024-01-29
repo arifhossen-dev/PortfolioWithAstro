@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+import Pill from "../components/Pill.astro";
 ---
 
 <BaseLayout title="About | Arif Hossen" description="About Arif Hossen Lorem Ipsum">
@@ -22,15 +23,9 @@ import Hero from '../components/Hero.astro';
 
 			<section>
 				<h2 class="section-title">Background</h2>
-				<div class="content">
+				<div class="content space-y-4">
 					<p>
 						I am a full-stack developer with 5 years of experience building web applications and a preference for back-end engineering. I have expertise in Laravel, PHP, Vue.js, DigitalOcean, and Docker. I have also worked with MySQL, SQLite, PostgreSQL, Elasticsearch, and Redis databases. I have worked on SaaS applications and with multiple projects with great success. I love maintaining SOLID Principles in Laravel Projects.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
 					</p>
 					<p>
 						Currently, I am open to being a team player.
@@ -46,7 +41,18 @@ import Hero from '../components/Hero.astro';
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<div class="flex gap-2">
+						<Pill>PHP</Pill>
+						<Pill>Laravel</Pill>
+						<Pill>MySql</Pill>
+						<Pill>JavaScript</Pill>
+						<Pill>Vue.js</Pill>
+						<Pill>Alpine.js</Pill>
+						<Pill>Pest</Pill>
+						<Pill>Livewire</Pill>
+						<Pill>Filament</Pill>
+						<Pill>TailwindCSS</Pill>
+					</div>
 				</div>
 			</section>
 		</main>
